@@ -53,25 +53,33 @@ function render1Car(car){
     addEl.className = "card col-3";
 
     let addElName = document.createElement("h2");
-    addElName.textContent = `Name: ${car.name}`
-    let addElColor = document.createElement("p");
+    addElName.textContent = `Name: ${car.name}`;
+    addElName.className = "card-body";
+    let addElUl = document.createElement("ul");
+    addElUl.className = "list-group list-group-flush";
+    let addElColor = document.createElement("li");
+    addElColor.className = "list-group-item";
     addElColor.textContent = `Color: ${car.color}`;
-    let addElPosition = document.createElement("p");
+    let addElPosition = document.createElement("li");
     addElPosition.textContent = `Position: ${car.position}`;
-    let addElDate = document.createElement("p");
+    addElPosition.className = "list-group-item";
+    let addElDate = document.createElement("li");
     addElDate.textContent = `Date: ${car.date}`;
-    let addElRace = document.createElement("p");
+    addElDate.className = "list-group-item";
+    let addElRace = document.createElement("li");
     addElRace.textContent = `Race: ${car.race}`;
-    let addElPrice = document.createElement("p");
-    addElPrice.textContent = `Price: ${car.price}`;
-
+    addElRace.className = "list-group-item";
+    let addElPrice = document.createElement("li");
+    addElPrice.textContent = `Price: $${car.price}`;
+    addElPrice.className = "list-group-item";
 
     addEl.append(addElName);
-    addEl.append(addElColor);
-    addEl.append(addElPosition);
-    addEl.append(addElDate);
-    addEl.append(addElRace);
-    addEl.append(addElPrice);
+    addEl.append(addElUl)
+    addElUl.append(addElColor);
+    addElUl.append(addElPosition);
+    addElUl.append(addElDate);
+    addElUl.append(addElRace);
+    addElUl.append(addElPrice);
 
     return addEl;
 }
