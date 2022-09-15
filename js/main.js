@@ -53,17 +53,17 @@ function render1Car(car){
     addEl.className = "card col-3";
 
     let addElName = document.createElement("h2");
-    addElName.textContent = car.name
+    addElName.textContent = `Name: ${car.name}`
     let addElColor = document.createElement("p");
-    addElColor.textContent = car.color;
+    addElColor.textContent = `Color: ${car.color}`;
     let addElPosition = document.createElement("p");
-    addElPosition.textContent = car.position;
+    addElPosition.textContent = `Position: ${car.position}`;
     let addElDate = document.createElement("p");
-    addElDate.textContent = car.date;
+    addElDate.textContent = `Date: ${car.date}`;
     let addElRace = document.createElement("p");
-    addElRace.textContent = car.race;
+    addElRace.textContent = `Race: ${car.race}`;
     let addElPrice = document.createElement("p");
-    addElPrice.textContent = car.price;
+    addElPrice.textContent = `Price: ${car.price}`;
 
 
     addEl.append(addElName);
