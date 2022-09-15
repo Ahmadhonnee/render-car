@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css"
+      integrity="sha512-XWTTruHZEYJsxV3W/lSXG1n3Q39YIWOstqvmFsdNEEQfHoZ6vm6E9GK2OrF6DSJSpIbRbi+Nn0WDPID9O7xB2Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Car render</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="d-flex gap-5 flex-column mt-5">
+        <input
+          required
+          class="form-control carName"
+          type="text"
+          placeholder="Enter the car name:"
+        />
+        <input
+          required
+          class="form-control carColor"
+          type="text"
+          placeholder="Enter the car color:"
+        />
+        <input
+          required
+          class="form-control carPosition"
+          type="number"
+          placeholder="Enter the car position:"
+        />
+        <input
+          required
+          class="form-control carDate"
+          type="number"
+          placeholder="Enter the car realease date:"
+        />
+        <input
+          required
+          class="form-control carRace"
+          type="number"
+          placeholder="Enter the car race:"
+        />
+        <input
+          required
+          class="form-control carPrice"
+          type="number"
+          placeholder="Enter the car price:"
+        />
+        <button class="btn btn-success w-25" type="submit">Add</button>
+      </form>
+      <div
+        class="mt-5 result d-flex flex-wrap row gap-3"
+        style="transition: all 3ms ease"
+      ></div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
